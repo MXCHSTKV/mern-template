@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8080
 const middleware = [
   cors(),
   cookieParser(),
-  express.json({ limit: '50kb'})
+  express.json({ limit: '50kb'}),
   express.static(resolve(__dirname, 'dist'))
 ]
 
